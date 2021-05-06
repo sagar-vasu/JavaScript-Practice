@@ -1027,29 +1027,36 @@
 //     (this.transfer = transfer),
 //     (this.pages = pages);
 //   this.discountMonths = discountMonths;
-
-//   this.calculateDiscount = function calculate(discount) {
-//     var bestPrice = this.price;
-//     var currentDate = new Date();
-//     var thisMonth = currentDate.getMonth();
-//     for (let i = 0; i < this.discountMonths.length; i++) {
-//       if (this.discountMonths[i] === thisMonth) {
-//         var check = (bestPrice = this.price * discount);
-//         return check * 12;
-//       }
-
-//       return bestPrice * 12;
-//     }
-//   };
 // }
+
+// Plan.prototype.calculateDiscount = function calculate(discount) {
+//   var bestPrice = this.price;
+//   var currentDate = new Date();
+//   var thisMonth = currentDate.getMonth();
+//   for (let i = 0; i < this.discountMonths.length; i++) {
+//     if (this.discountMonths[i] === thisMonth) {
+//       var check = (bestPrice = this.price * discount);
+//       return check * 12;
+//     }
+
+//     return bestPrice * 12;
+//   }
+// };
+
+// Plan.prototype.newName = true;
 
 // var plan1 = new Plan("Basic", 3.99, 100, 1000, 10, [4, 7]);
 // var plan2 = new Plan("Professional", 5.99, 500, 5000, 50, [6, 9]);
 // var plan3 = new Plan("Ultimate", 9.99, 2000, 20000, 500, [10, 11]);
 
-// var anualReport1 = plan1.calculateDiscount(0.5);
-// var anualReport2 = plan2.calculateDiscount(0.8);
-// var anualReport3 = plan3.calculateDiscount(0.7);
-// alert(anualReport1);
-// alert(anualReport2);
-// alert(anualReport3);
+// var allData = [];
+
+// for (var key in plan1) {
+//   if (plan1.hasOwnProperty(key)) {
+//     allData.push(key);
+//   }
+// }
+
+// var isOwnedProperty = plan1.hasOwnProperty("addNew");
+
+// console.log(isOwnedProperty);
