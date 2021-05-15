@@ -1060,3 +1060,132 @@
 // var isOwnedProperty = plan1.hasOwnProperty("addNew");
 
 // console.log(isOwnedProperty);
+
+// var x = prompt("Where does the Pope live?");
+// var y = prompt("Where does the Pope live?");
+// if (x === "Vatican" && y === "yz") {
+//   alert("Correct!");
+// } else if (x === "Mithi") {
+//   alert("Welcome");
+// } else {
+//   alert("sorry");
+// }
+
+// var check = false;
+
+// for (var i = 0; i < 5; i++) {
+//   if (x == i) {
+//     alert("Thanks");
+//     check = true;
+//   }
+// }
+
+// if (check === false) {
+//   alert("soryy");
+// }
+
+// var path = "http://www.mybeautifulsite.com/products/page33.html#humidifier";
+
+// var name = "Sagar";
+// function gotoPage(params) {
+//   document.write(name);
+// }
+
+// Hek time
+
+// setTimeout(() => {
+//   name = "Kamal";
+//   document.write(name);
+// }, 3000);
+// setTimeout(function () {
+//   window.location.reload();
+//   var dsjs = "Hsdjshdkhk";
+//   document.write(dsjs);
+// }, 3000);
+
+// setInterval(function () {
+//   var dsjs = "Hsdjshdkhk";
+//   document.write(dsjs);
+// }, 3000);
+
+// function goForword() {
+//   window.history.forward(1);
+// }
+
+// function checkForPopBlocker() {
+//   var testPop = window.open("", "", "width=100,height=100");
+//   if (testPop === null) {
+//     alert("Please disable your popup blocker.");
+//   }
+//   //   testPop.close();
+// }
+
+// function checkForLastName() {
+//   var lastName = document.getElementById("lastNameField");
+
+//   if (!lastName.value || lastName.value.length < 4) {
+//     alert("Please enter last name...");
+//     lastName.focus();
+//     lastName.style.border = "2px solid red";
+//     lastName.style.outline = "none ";
+//     lastName.style.background = "yellow";
+//     return false;
+//   }
+// }
+
+// function checkForSelection(id) {
+//   var states = document.getElementById(id);
+//   if (states.selectedIndex === 0) {
+//     alert("Please Select a state");
+//     return false;
+//   } else {
+//     var name = states.options[states.selectedIndex].text;
+//     alert(name);
+//   }
+// }
+
+// function validateRadios() {
+//   var radios = document.getElementsByName("r1");
+
+//   for (var i = 0; i < radios.length; i++) {
+//     if (radios[i].checked) {
+//       return true;
+//     }
+
+//   }
+
+//     alert("Please check this");
+//     return false;
+// }
+
+// function verifyZipCode(name) {
+//   var code = document.getElementById(name).value;
+
+//   var check = true;
+
+//   if (code.length <= 4 || code.length > 5) {
+//     alert("Please enter a 5-digit code.");
+//     check = false;
+//   }
+//   for (var i = 0; i < 4; i++) {
+//     var changeType = parseInt(code[i]);
+//     if (isNaN(changeType)) {
+//       alert("Please enter only numbers.");
+//       check = false;
+//       return false;
+//     }
+//   }
+
+//   if (check === true) {
+//     alert(code);
+//   }
+// }
+
+function verifyEmail() {
+  var myEmail = document.getElementById("email").value;
+  var regex = /^[\w\-\.\+]+\@[a-zA-Z0-9\. \-]+\.[a-zA-z0-9]{2,4}$/;
+
+  if (!myEmail.match(regex)) {
+    alert("Please enter your correct email");
+  }
+}
