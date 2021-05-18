@@ -1268,11 +1268,37 @@
 // 1 , Signup {name, email,password}
 // 2 , login {email,password}
 
-localStorage === "users",
-  [
-    { name: "sagar", email: "sagar@gamil.com", password: "123456" },
-    { name: "kamal", email: "kamal@gamil.com", password: "123456" },
-    { name: "kamal", email: "kamal@gamil.com", password: "123456" },
-  ];
+// localStorage === "users",
+//   [
+//     { name: "sagar", email: "sagar@gamil.com", password: "123456" },
+//     { name: "kamal", email: "kamal@gamil.com", password: "123456" },
+//     { name: "kamal", email: "kamal@gamil.com", password: "123456" },
+//   ];
 
-localStorage === login; // email and password   ===. home screen name ahean eamil show the
+// localStorage === login; // email and password   ===. home screen name ahean eamil show the
+
+var userNames = [{ name: "sagar" }, { name: "kamal" }, { name: "darpan" }];
+
+var saveData = localStorage.setItem("names", JSON.stringify(userNames));
+
+var getData = localStorage.getItem("names");
+
+var myAllUsers = JSON.parse(getData);
+
+if (myAllUsers) {
+  var askName = prompt("Enter name...");
+
+  var checkName = false;
+  for (var i = 0; i < myAllUsers.length; i++) {
+    if (askName === myAllUsers[i].name) {
+      alert("User name found" + askName);
+      checkName = true;
+    }
+  }
+
+  if (checkName === false) {
+    alert("you are not in our database");
+  }
+} else {
+  alert("Sorry no data found in database");
+}
