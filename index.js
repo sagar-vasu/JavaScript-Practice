@@ -1181,11 +1181,98 @@
 //   }
 // }
 
-function verifyEmail() {
-  var myEmail = document.getElementById("email").value;
-  var regex = /^[\w\-\.\+]+\@[a-zA-Z0-9\. \-]+\.[a-zA-z0-9]{2,4}$/;
+// function verifyEmail() {
+//   var myEmail = document.getElementById("email").value;
+//   var regex = /^[\w\-\.\+]+\@[a-zA-Z0-9\. \-]+\.[a-zA-z0-9]{2,4}$/;
 
-  if (!myEmail.match(regex)) {
-    alert("Please enter your correct email");
-  }
-}
+//   if (!myEmail.match(regex)) {
+//     alert("Please enter your correct email");
+//   }
+// }
+
+// function greetWorld() {
+//   try {
+//     var greeting = "Hello world!";
+//     sagar(greeting);
+//   } catch (err) {
+//     alert(err.message);
+//   }
+// }
+
+// greetWorld();
+
+// function checkPassword() {
+//   try {
+//     var pass = document.getElementById("f1").value;
+
+//     var passRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
+//     if (pass.match(passRegex)) {
+//       alert(pass);
+//     } else {
+//       alert("wrong");
+//     }
+
+//     // if (pass.length < 8) {
+//     //   throw "Please enter at least 8 characters";
+//     // }
+//     // if (pass.indexOf(" ") !== -1) {
+//     //   throw "No spaces in the password, please.";
+//     // }
+//   } catch (error) {
+//     alert(error);
+//   }
+// }
+
+// var myQuestions = [
+//   {
+//     question: "Who invented JavaScript?",
+//     answers: {
+//       a: "Douglas Crockford",
+//       b: "Sheryl Sandberg",
+//       c: "Brendan Eich",
+//     },
+//     correctAnswer: "c",
+//   },
+//   {
+//     question: "Which one of these is a JavaScript package manager?",
+//     answers: {
+//       a: "Node.js",
+//       b: "TypeScript",
+//       c: "npm",
+//     },
+//     correctAnswer: "c",
+//   },
+//   {
+//     question: "Which tool can you use to ensure code quality?",
+//     answers: {
+//       a: "Angular",
+//       b: "jQuery",
+//       c: "RequireJS",
+//       d: "ESLint",
+//     },
+//     correctAnswer: "d",
+//   },
+// ];
+
+// localStorage.setItem("quiz", JSON.stringify(myQuestions));
+
+// var getData = localStorage.getItem("quiz");
+// var quizData = JSON.parse(getData);
+
+// if (quizData) {
+//   console.log(quizData);
+// } else {
+//   alert("no quiz found");
+// }
+
+// 1 , Signup {name, email,password}
+// 2 , login {email,password}
+
+localStorage === "users",
+  [
+    { name: "sagar", email: "sagar@gamil.com", password: "123456" },
+    { name: "kamal", email: "kamal@gamil.com", password: "123456" },
+    { name: "kamal", email: "kamal@gamil.com", password: "123456" },
+  ];
+
+localStorage === login; // email and password   ===. home screen name ahean eamil show the

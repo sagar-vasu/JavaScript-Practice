@@ -46,8 +46,15 @@
     <!-- <input type="text" id="zipcode" placeholder="Enter Zip" />
     <button onclick="verifyZipCode('zipcode')">Check</button> -->
 
-    <input type="email" id="email" placeholder="Enter Email" />
-    <button onclick="verifyEmail()">Check</button>
+    <!-- <input type="email" id="email" placeholder="Enter Email" />
+    <button onclick="verifyEmail()">Check</button> -->
+
+    <form onSubmit="return checkPassword();">
+      Enter a password<br />
+      (8-12 characters, at least 1 number, no spaces)<br />
+      <input type="text" id="f1" />
+      <input type="submit" value="Submit" />
+    </form>
 
     <script src="index.js"></script>
   </body>
